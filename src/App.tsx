@@ -1,4 +1,5 @@
 import { TbBrandTypescript } from 'react-icons/tb';
+import { FiMenu } from 'react-icons/fi';
 import BtnComponent from './components/BtnComponent';
 
 function App() {
@@ -11,18 +12,23 @@ function App() {
         <TbBrandTypescript />
       </div>
       <p>
-        Projeto criado exclusivamente para fim de estudo e testes com React + Typescript
-      </p>
+        Projeto criado exclusivamente para fim de estudo e testes com React + Typescript, assim como criação de 
+        componentes para uso em outros projetos.
+      </p>   
+      <div className='menu-align'>       
+        < FiMenu />
+      </div>       
       <div className="align-btn">
-        <BtnComponent text="Teste 01" />
-        <BtnComponent text="Teste 02" />
-        <BtnComponent text="Teste 03" />
-        <BtnComponent text="Teste 04" />
-        <BtnComponent text="Teste 05" />
+        <BtnComponent text="Botões" />
+        <BtnComponent text="Formulários" />
+        <BtnComponent text="Grids" />
+        <BtnComponent text="Headers" />
+        <BtnComponent text="Footers" />
         <BtnComponent text="Teste 06" />
         <BtnComponent text="Teste 07" />
         <BtnComponent text="Teste 08" />
       </div>
+       
     </div>
   );
 }
