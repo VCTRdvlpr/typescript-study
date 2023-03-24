@@ -1,24 +1,28 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { TbBrandTypescript } from 'react-icons/tb';
+import BtnComponent from './components/BtnComponent';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className='title-align'>
+        <h1>
+          My TypeScript Playground
+        </h1>           
+        <TbBrandTypescript />
+      </div>
+      <p>
+        Projeto criado exclusivamente para fim de estudo e testes com React + Typescript
+      </p>
+      <div className="align-btn">
+        <BtnComponent text="Teste 01" />
+        <BtnComponent text="Teste 02" />
+        <BtnComponent text="Teste 03" />
+        <BtnComponent text="Teste 04" />
+        <BtnComponent text="Teste 05" />
+        <BtnComponent text="Teste 06" />
+        <BtnComponent text="Teste 07" />
+        <BtnComponent text="Teste 08" />
+      </div>
     </div>
   );
 }
